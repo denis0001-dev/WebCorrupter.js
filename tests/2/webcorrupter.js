@@ -73,7 +73,7 @@ var corrupter;
         payloads.messUpElements = messUpElements;
         function addRandomText() {
             return __awaiter(this, void 0, void 0, function* () {
-                yield delay(randomNumber(100, 3000));
+                yield delay(randomNumber(100, max()));
                 console.log("Adding random text...");
                 const numberOfTimes = randomNumber(10, max());
                 console.log("Number of times: ", numberOfTimes);

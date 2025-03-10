@@ -54,7 +54,7 @@ namespace corrupter {
         }
 
         export async function addRandomText() {
-            await delay(randomNumber(100, 3000));
+            await delay(randomNumber(100, max()));
             console.log("Adding random text...");
             const numberOfTimes = randomNumber(10, max());
             console.log("Number of times: ", numberOfTimes);
