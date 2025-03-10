@@ -22,8 +22,8 @@ eval(
 
 ## Тесты
 Этот вирус содержит два теста:
-1. [Простая HTML-страница](https://denis0001-dev.github.io/WebCorrupter.js/tests/1)
+1. [Простая HTML-страница](https://denis0001-dev.github.io/WebCorrupter.js/tests/1);
 2. [Клон сайта Toolbox.io](https://denis0001-dev.github.io/WebCorrupter.js/tests/2). 
-   Кстати, если вам интересно узнать про Toolbox.io, [оригинальный сайт здесь](https://toolbox-io.ru)
+   Кстати, если вам интересно узнать про Toolbox.io, [оригинальный сайт здесь](https://toolbox-io.ru).
 
 Все тесты содержат копию `webcorrupter.js` для удобства тестирования.
