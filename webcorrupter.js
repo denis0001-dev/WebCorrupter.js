@@ -21,6 +21,15 @@ var random;
         return Math.round(Math.random() * (max - min) + min);
     }
     random.randomNumber = randomNumber;
+    function randomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    random.randomColor = randomColor;
 })(random || (random = {}));
 var corrupter;
 (function (corrupter) {
@@ -28,26 +37,72 @@ var corrupter;
     var delay = utils.delay;
     let payloads;
     (function (payloads) {
+        var randomColor = random.randomColor;
         function messUpElements() {
+            return __awaiter(this, void 0, void 0, function* () {
+                yield delay(randomNumber(100, 3000));
+                const numberOfTimes = randomNumber(1, 50);
+                console.log(numberOfTimes);
+                for (let i = 0; i < numberOfTimes; i++) {
+                    try {
+                        randomElement().appendChild(randomElement(true));
+                    }
+                    catch (e) { }
+                    yield delay(randomNumber(100, 500));
+                }
+            });
+        }
+        payloads.messUpElements = messUpElements;
+        function addRandomText() {
             return __awaiter(this, void 0, void 0, function* () {
                 yield delay(randomNumber(100, 3000));
                 const numberOfTimes = randomNumber(1, 15);
                 console.log(numberOfTimes);
                 for (let i = 0; i < numberOfTimes; i++) {
                     try {
-                        randomElement().appendChild(randomElement());
+                        randomElement().textContent += "error";
                     }
                     catch (e) { }
-                    yield delay(randomNumber(100, 3000));
+                    yield delay(randomNumber(100, 1000));
                 }
             });
         }
-        payloads.messUpElements = messUpElements;
+        payloads.addRandomText = addRandomText;
+        function addRandomStyles() {
+            return __awaiter(this, void 0, void 0, function* () {
+                yield delay(randomNumber(100, 3000));
+                const numberOfTimes = randomNumber(1, 15);
+                console.log(numberOfTimes);
+                for (let i = 0; i < numberOfTimes; i++) {
+                    try {
+                        const element = randomElement();
+                        const random = randomNumber(0, 2);
+                        switch (random) {
+                            case 0: {
+                                element.style.color = randomColor();
+                                break;
+                            }
+                            case 1: {
+                                element.style.backgroundColor = randomColor();
+                                break;
+                            }
+                            case 2: {
+                                element.style.transform = `blur(${randomNumber(1, 100)}px)`;
+                                break;
+                            }
+                        }
+                    }
+                    catch (e) { }
+                    yield delay(randomNumber(100, 1000));
+                }
+            });
+        }
+        payloads.addRandomStyles = addRandomStyles;
         function showHead() {
             return __awaiter(this, void 0, void 0, function* () {
                 const stylesheet = document.createElement('style');
                 stylesheet.textContent = `
-            head * {
+            head {
                 display: block !important;
             }
             `;
@@ -55,9 +110,27 @@ var corrupter;
             });
         }
         payloads.showHead = showHead;
+        function randomScroll() {
+            return __awaiter(this, void 0, void 0, function* () {
+                // noinspection InfiniteLoopJS
+                while (true) {
+                    scrollTo({
+                        top: randomNumber(0, innerHeight)
+                    });
+                    yield delay(randomNumber(100, 10000));
+                }
+            });
+        }
+        payloads.randomScroll = randomScroll;
     })(payloads || (payloads = {}));
-    function randomElement() {
-        const elements = document.querySelectorAll("body *");
+    function randomElement(fromBody = false) {
+        let elements;
+        if (fromBody) {
+            elements = document.querySelectorAll("body *");
+        }
+        else {
+            elements = document.querySelectorAll("*");
+        }
         return elements[randomNumber(0, elements.length - 1)];
     }
     function start() {
@@ -67,6 +140,15 @@ var corrupter;
             payloads.messUpElements();
             if (randomNumber(0, 1) == 1) {
                 payloads.showHead();
+            }
+            if (randomNumber(0, 1) == 1) {
+                payloads.randomScroll();
+            }
+            if (randomNumber(0, 1) == 1) {
+                payloads.addRandomText();
+            }
+            if (randomNumber(0, 1) == 1) {
+                payloads.addRandomStyles();
             }
         });
     }
