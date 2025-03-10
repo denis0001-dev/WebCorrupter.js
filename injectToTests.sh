@@ -1,2 +1,5 @@
 #!/bin/bash
-cp -f -r webcorrupter.js tests/*/
+
+for i in tests/*/; do
+    cp -f webcorrupter.js "$i"
+done
