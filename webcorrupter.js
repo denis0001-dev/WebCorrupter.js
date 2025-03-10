@@ -120,13 +120,7 @@ var corrupter;
         payloads.addRandomStyles = addRandomStyles;
         function showHead() {
             return __awaiter(this, void 0, void 0, function* () {
-                const stylesheet = document.createElement('style');
-                stylesheet.textContent = `
-            head {
-                display: block !important;
-            }
-            `;
-                document.head.appendChild(stylesheet);
+                document.head.classList.add("show");
             });
         }
         payloads.showHead = showHead;

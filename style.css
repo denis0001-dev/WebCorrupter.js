@@ -3,3 +3,7 @@
     background: red;
     padding: 10px;
 }
+
+head.show {
+    display: block !important;
+}
