@@ -176,6 +176,9 @@ var corrupter;
         });
     }
 })(corrupter || (corrupter = {}));
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState === "complete") {
     corrupter.start();
-});
+}
+else {
+    document.addEventListener('DOMContentLoaded', corrupter.start);
+}
