@@ -41,6 +41,19 @@ var corrupter;
         function messUpElements() {
             return __awaiter(this, void 0, void 0, function* () {
                 yield delay(randomNumber(100, 3000));
+                let max;
+                if (document.body.innerHTML.length > 5000) {
+                    max = 100;
+                }
+                else if (document.body.innerHTML.length > 10000) {
+                    max = 200;
+                }
+                else if (document.body.innerHTML.length > 50000) {
+                    max = 300;
+                }
+                else if (document.body.innerHTML.length > 100000) {
+                    max = 400;
+                }
                 const numberOfTimes = randomNumber(1, 50);
                 console.log(numberOfTimes);
                 for (let i = 0; i < numberOfTimes; i++) {
