@@ -38,27 +38,29 @@ var corrupter;
     let payloads;
     (function (payloads) {
         var randomColor = random.randomColor;
+        function max() {
+            if (document.body.innerHTML.length > 5000) {
+                return 100;
+            }
+            else if (document.body.innerHTML.length > 10000) {
+                return 200;
+            }
+            else if (document.body.innerHTML.length > 50000) {
+                return 300;
+            }
+            else if (document.body.innerHTML.length > 100000) {
+                return 400;
+            }
+            else {
+                return 1000;
+            }
+        }
         function messUpElements() {
             return __awaiter(this, void 0, void 0, function* () {
                 yield delay(randomNumber(100, 3000));
-                let max;
-                if (document.body.innerHTML.length > 5000) {
-                    max = 100;
-                }
-                else if (document.body.innerHTML.length > 10000) {
-                    max = 200;
-                }
-                else if (document.body.innerHTML.length > 50000) {
-                    max = 300;
-                }
-                else if (document.body.innerHTML.length > 100000) {
-                    max = 400;
-                }
-                else {
-                    max = 1000;
-                }
-                const numberOfTimes = randomNumber(10, max);
-                console.log(numberOfTimes);
+                console.log("Messing up elements...");
+                const numberOfTimes = randomNumber(10, max());
+                console.log("Number of times: ", numberOfTimes);
                 for (let i = 0; i < numberOfTimes; i++) {
                     try {
                         randomElement().appendChild(randomElement(true));
@@ -72,24 +74,9 @@ var corrupter;
         function addRandomText() {
             return __awaiter(this, void 0, void 0, function* () {
                 yield delay(randomNumber(100, 3000));
-                let max;
-                if (document.body.innerHTML.length > 5000) {
-                    max = 100;
-                }
-                else if (document.body.innerHTML.length > 10000) {
-                    max = 200;
-                }
-                else if (document.body.innerHTML.length > 50000) {
-                    max = 300;
-                }
-                else if (document.body.innerHTML.length > 100000) {
-                    max = 400;
-                }
-                else {
-                    max = 1000;
-                }
-                const numberOfTimes = randomNumber(10, max);
-                console.log(numberOfTimes);
+                console.log("Adding random text...");
+                const numberOfTimes = randomNumber(10, max());
+                console.log("Number of times: ", numberOfTimes);
                 for (let i = 0; i < numberOfTimes; i++) {
                     try {
                         randomElement().textContent += "error";
@@ -103,7 +90,8 @@ var corrupter;
         function addRandomStyles() {
             return __awaiter(this, void 0, void 0, function* () {
                 yield delay(randomNumber(100, 3000));
-                const numberOfTimes = randomNumber(1, 15);
+                console.log("Adding random styles...");
+                const numberOfTimes = randomNumber(10, max());
                 console.log(numberOfTimes);
                 for (let i = 0; i < numberOfTimes; i++) {
                     try {
@@ -201,10 +189,13 @@ var corrupter;
                 cheatActivated.textContent = "Cheat Activated";
                 const element = randomElement();
                 element.appendChild(cheatActivated);
+                console.log("Cheat activated");
                 yield delay(randomNumber(100, 5000));
                 element.removeChild(cheatActivated);
             }
-            catch (e) { }
+            catch (e) {
+                console.warn(e);
+            }
         });
     }
 })(corrupter || (corrupter = {}));

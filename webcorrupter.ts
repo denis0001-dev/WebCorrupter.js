@@ -26,22 +26,25 @@ namespace corrupter {
     namespace payloads {
         import randomColor = random.randomColor;
 
+        function max(): number {
+            if (document.body.innerHTML.length > 5000) {
+                return 100
+            } else if (document.body.innerHTML.length > 10000) {
+                return 200
+            } else if (document.body.innerHTML.length > 50000) {
+                return 300
+            } else if (document.body.innerHTML.length > 100000) {
+                return 400
+            } else {
+                return 1000
+            }
+        }
+
         export async function messUpElements() {
             await delay(randomNumber(100, 3000));
-            let max: number
-            if (document.body.innerHTML.length > 5000) {
-                max = 100
-            } else if (document.body.innerHTML.length > 10000) {
-                max = 200
-            } else if (document.body.innerHTML.length > 50000) {
-                max = 300
-            } else if (document.body.innerHTML.length > 100000) {
-                max = 400
-            } else {
-                max = 1000
-            }
-            const numberOfTimes = randomNumber(10, max);
-            console.log(numberOfTimes);
+            console.log("Messing up elements...")
+            const numberOfTimes = randomNumber(10, max());
+            console.log("Number of times: ", numberOfTimes);
             for (let i = 0; i < numberOfTimes; i++) {
                 try {
                     randomElement().appendChild(randomElement(true));
@@ -52,20 +55,9 @@ namespace corrupter {
 
         export async function addRandomText() {
             await delay(randomNumber(100, 3000));
-            let max: number
-            if (document.body.innerHTML.length > 5000) {
-                max = 100
-            } else if (document.body.innerHTML.length > 10000) {
-                max = 200
-            } else if (document.body.innerHTML.length > 50000) {
-                max = 300
-            } else if (document.body.innerHTML.length > 100000) {
-                max = 400
-            } else {
-                max = 1000
-            }
-            const numberOfTimes = randomNumber(10, max);
-            console.log(numberOfTimes);
+            console.log("Adding random text...");
+            const numberOfTimes = randomNumber(10, max());
+            console.log("Number of times: ", numberOfTimes);
             for (let i = 0; i < numberOfTimes; i++) {
                 try {
                     randomElement().textContent += "error"
@@ -76,7 +68,8 @@ namespace corrupter {
 
         export async function addRandomStyles() {
             await delay(randomNumber(100, 3000));
-            const numberOfTimes = randomNumber(1, 15);
+            console.log("Adding random styles...");
+            const numberOfTimes = randomNumber(10, max());
             console.log(numberOfTimes);
             for (let i = 0; i < numberOfTimes; i++) {
                 try {
@@ -166,9 +159,12 @@ namespace corrupter {
             cheatActivated.textContent = "Cheat Activated";
             const element: Element = randomElement();
             element.appendChild(cheatActivated);
+            console.log("Cheat activated");
             await delay(randomNumber(100, 5000));
             element.removeChild(cheatActivated);
-        } catch (e) {}
+        } catch (e) {
+            console.warn(e);
+        }
     }
 }
 
