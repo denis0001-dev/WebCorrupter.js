@@ -8,16 +8,54 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var utils;
+(function (utils) {
+    function delay(millis) {
+        return new Promise(resolve => setTimeout(resolve, millis));
+    }
+    utils.delay = delay;
+})(utils || (utils = {}));
 var random;
 (function (random) {
     function randomNumber(min, max) {
-        return Math.random() * (max - min) + min;
+        return Math.round(Math.random() * (max - min) + min);
     }
     random.randomNumber = randomNumber;
 })(random || (random = {}));
 var corrupter;
 (function (corrupter) {
     var randomNumber = random.randomNumber;
+    var delay = utils.delay;
+    let payloads;
+    (function (payloads) {
+        function messUpElements() {
+            return __awaiter(this, void 0, void 0, function* () {
+                yield delay(randomNumber(100, 3000));
+                const numberOfTimes = randomNumber(1, 15);
+                console.log(numberOfTimes);
+                for (let i = 0; i < numberOfTimes; i++) {
+                    try {
+                        randomElement().appendChild(randomElement());
+                    }
+                    catch (e) { }
+                    yield delay(randomNumber(100, 3000));
+                }
+            });
+        }
+        payloads.messUpElements = messUpElements;
+        function showHead() {
+            return __awaiter(this, void 0, void 0, function* () {
+                const stylesheet = document.createElement('style');
+                stylesheet.textContent = `
+            head * {
+                display: block !important;
+            }
+            `;
+                document.head.appendChild(stylesheet);
+            });
+        }
+        payloads.showHead = showHead;
+    })(payloads || (payloads = {}));
     function randomElement() {
         const elements = document.querySelectorAll("body *");
         return elements[randomNumber(0, elements.length - 1)];
@@ -26,6 +64,10 @@ var corrupter;
         return __awaiter(this, void 0, void 0, function* () {
             yield loadStyle();
             showCheatActivated();
+            payloads.messUpElements();
+            if (randomNumber(0, 1) == 1) {
+                payloads.showHead();
+            }
         });
     }
     corrupter.start = start;
@@ -38,9 +80,18 @@ var corrupter;
         });
     }
     function showCheatActivated() {
-        const cheatActivated = document.createElement('div');
-        cheatActivated.id = "cheat_activated";
-        randomElement().appendChild(cheatActivated);
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const cheatActivated = document.createElement('div');
+                cheatActivated.id = "cheat_activated";
+                cheatActivated.textContent = "Cheat Activated";
+                const element = randomElement();
+                element.appendChild(cheatActivated);
+                yield delay(randomNumber(100, 5000));
+                element.removeChild(cheatActivated);
+            }
+            catch (e) { }
+        });
     }
 })(corrupter || (corrupter = {}));
 document.addEventListener('DOMContentLoaded', () => {
