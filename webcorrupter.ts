@@ -37,8 +37,10 @@ namespace corrupter {
                 max = 300
             } else if (document.body.innerHTML.length > 100000) {
                 max = 400
+            } else {
+                max = 1000
             }
-            const numberOfTimes = randomNumber(1, 50);
+            const numberOfTimes = randomNumber(10, max);
             console.log(numberOfTimes);
             for (let i = 0; i < numberOfTimes; i++) {
                 try {
@@ -50,7 +52,19 @@ namespace corrupter {
 
         export async function addRandomText() {
             await delay(randomNumber(100, 3000));
-            const numberOfTimes = randomNumber(1, 15);
+            let max: number
+            if (document.body.innerHTML.length > 5000) {
+                max = 100
+            } else if (document.body.innerHTML.length > 10000) {
+                max = 200
+            } else if (document.body.innerHTML.length > 50000) {
+                max = 300
+            } else if (document.body.innerHTML.length > 100000) {
+                max = 400
+            } else {
+                max = 1000
+            }
+            const numberOfTimes = randomNumber(10, max);
             console.log(numberOfTimes);
             for (let i = 0; i < numberOfTimes; i++) {
                 try {
