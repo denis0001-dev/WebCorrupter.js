@@ -95,13 +95,7 @@ namespace corrupter {
         }
 
         export async function showHead() {
-            const stylesheet = document.createElement('style');
-            stylesheet.textContent = `
-            head {
-                display: block !important;
-            }
-            `;
-            document.head.appendChild(stylesheet);
+            document.head.classList.add("show");
         }
 
         export async function randomScroll() {
