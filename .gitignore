@@ -1,12 +1,5 @@
 .gradle
-build/classes
-build/compileSync
-build/js
-build/klib
-build/kotlin
-build/kotlin-webpack
-build/processedResources
-build/tmp
+build
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -41,7 +34,6 @@ bin/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
 
