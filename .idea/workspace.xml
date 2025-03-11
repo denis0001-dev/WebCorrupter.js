@@ -5,68 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="switch to kotlin">
-      <change afterPath="$PROJECT_DIR$/injectToTests.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/1/webcorrupter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/material-symbols-outlined/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/material-symbols-outlined/main.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-ext-italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-ext-normal.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-normal.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/HOW_TO_LOCK_APPS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/HOW_TO_USE_UNLOCK_PROTECTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/create.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_lock_apps/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_lock_apps_raw.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_use_unlock_protection/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_use_unlock_protection_raw.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/style_md.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/lib/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/as_a_separate_app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/as_a_shortcut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/demo.webm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/accessibility_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/accessibility_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/applocker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/crash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/notification.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/password.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/select_apps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_use_unlock_protection/devadmin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_use_unlock_protection/unlock_protection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/webcorrupter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WebCorrupter_js_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/WebCorrupter_js_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/util/Utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsMain/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/resources/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsMain/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/resources/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +65,7 @@
         <option value="HTML File" />
         <option value="TypeScript File" />
         <option value="tsconfig.json" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -143,37 +88,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.WebCorrupter.js [:jsBrowserProductionRun].executor": "Run",
-    "Gradle.WebCorrupter.js [clean].executor": "Run",
-    "Gradle.WebCorrupter.js [jsBrowserProductionWebpack].executor": "Run",
-    "JavaScript Debug.Browser debug.executor": "Run",
-    "JavaScript Debug.Run.executor": "Run",
-    "JavaScript Debug.Test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Shell Script.Inject to tests.executor": "Run",
-    "Shell Script.Test 1.executor": "Run",
-    "Shell Script.Test 2.executor": "Run",
-    "git-widget-placeholder": "kotlin",
-    "javascript.nodejs.core.library.configured.version": "22.14.0",
-    "javascript.nodejs.core.library.typings.version": "22.13.10",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/media/denis0001-dev/data/Программы/JetBrains/Плагины/TabNine-1.206.0.zip",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/denis0001-dev/WebstormProjects/WebCorrupter.js/tests/2/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.WebCorrupter.js [:jsBrowserProductionRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WebCorrupter.js [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WebCorrupter.js [jsBrowserDevelopmentRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WebCorrupter.js [jsBrowserDistribution].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.WebCorrupter.js [jsBrowserProductionWebpack].executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Browser debug.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Run.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.Test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Shell Script.Inject to tests.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Test 1.executor&quot;: &quot;Run&quot;,
+    &quot;Shell Script.Test 2.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.14.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.13.10&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/denis0001-dev/data/Программы/JetBrains/Плагины/TabNine-1.206.0.zip&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/denis0001-dev/WebstormProjects/WebCorrupter.js/tests/2/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="/tmp/qodana_output/qodana.sarif.json" reportGuid="fb5bc712-a554-4378-9062-2b00b661c674" reportId="WebCorrupter.js/qodana/2025-03-10" />
@@ -186,6 +133,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/jsMain/resources" />
+      <recent name="$PROJECT_DIR$/dist" />
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
@@ -193,9 +141,11 @@
     <option name="myCommands">
       <command value="gradle jsBrowserProductionWebpack" />
       <command value="gradle :jsBrowserProductionRun" />
+      <command value="gradle jsBrowserDistribution" />
+      <command value="gradle jsBrowserDevelopmentRun --continuous" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]">
+  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]">
     <configuration name="WebCorrupter.js [:jsBrowserProductionRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -240,6 +190,50 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="WebCorrupter.js [jsBrowserDevelopmentRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--continuous" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jsBrowserDevelopmentRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebCorrupter.js [jsBrowserDistribution]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jsBrowserDistribution" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="WebCorrupter.js [jsBrowserProductionWebpack]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -264,8 +258,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [clean]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
       </list>
     </recent_temporary>
@@ -291,6 +287,7 @@
       <workItem from="1741679607798" duration="43000" />
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
+      <workItem from="1741714783556" duration="3210000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -508,7 +505,47 @@
       <option name="project" value="LOCAL" />
       <updated>1741679328120</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="switch to kotlin">
+      <option name="closed" value="true" />
+      <created>1741708339491</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1741708339491</updated>
+    </task>
+    <task id="LOCAL-00029" summary="switch to kotlin">
+      <option name="closed" value="true" />
+      <created>1741708374651</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1741708374651</updated>
+    </task>
+    <task id="LOCAL-00030" summary="switch to kotlin">
+      <option name="closed" value="true" />
+      <created>1741708695726</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1741708695726</updated>
+    </task>
+    <task id="LOCAL-00031" summary="switch to kotlin">
+      <option name="closed" value="true" />
+      <created>1741709398289</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1741709398289</updated>
+    </task>
+    <task id="LOCAL-00032" summary="switch to kotlin">
+      <option name="closed" value="true" />
+      <created>1741709474160</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1741709474160</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,6 +556,8 @@
         <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/main.js" />
         <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/main.js" />
         <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/common.js" />
+        <option value="$PROJECT_DIR$/dist/tests/2/main.js" />
+        <option value="$PROJECT_DIR$/dist/tests/2/common.js" />
       </list>
     </option>
   </component>
@@ -548,8 +587,9 @@
     <MESSAGE value="fixed minifier" />
     <MESSAGE value="remove minifier" />
     <MESSAGE value="delete node modules" />
-    <MESSAGE value="fix" />
     <MESSAGE value="node modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="node modules" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="switch to kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch to kotlin" />
   </component>
 </project>

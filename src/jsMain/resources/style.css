@@ -7,3 +7,23 @@
 head.show {
     display: block !important;
 }
+
+body > #bsod {
+    margin: 0;
+    padding: 0;
+    transform: none !important;
+}
+
+html #bsod {
+    transform: none !important;
+}
+
+#bsod {
+    display: block;
+    color: white !important;
+    background-color: blue !important;
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    transform: none !important;
+}

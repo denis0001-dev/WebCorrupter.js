@@ -6,13 +6,118 @@
         <!--suppress HtmlUnknownTarget -->
         <script src="WebCorrupter.js"></script>
         <title>WebCorrupter.js demo</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                background-color: #f0f0f0;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        </style>
     </head>
     <body>
-        Hello! I'm a simple website.
-        <h1>Test</h1>
-        This website is infected by <a href="https://github.com/denis0001-dev/WebCorrupter.js">WebCorrupter.js</a>.
-        That means this website will get corrupted really soon.
-        <h2>What will happen</h2>
-        The website will start glitching, text starts randomly switching colors, and more.
+        <div class="container">
+            <header style="background-color: #4CAF50; color: white; padding: 10px; text-align: center;">
+                <h1 style="margin: 0;">WebCorrupter.js Demo</h1>
+            </header>
+
+            <nav style="background-color: #333; padding: 10px;">
+                <a href="#" style="color: white; text-decoration: none; margin-right: 10px;">Home</a>
+                <a href="#" style="color: white; text-decoration: none; margin-right: 10px;">About</a>
+                <a href="#" style="color: white; text-decoration: none; margin-right: 10px;">Services</a>
+                <a href="#" style="color: white; text-decoration: none;">Contact</a>
+            </nav>
+
+            <main>
+                <p>Hello! I'm a simple website.</p>
+                <h2 style="color: #4CAF50;">Welcome to the Chaos</h2>
+                <p>This website is infected by <a href="https://github.com/denis0001-dev/WebCorrupter.js" style="color: #4CAF50; font-weight: bold;">WebCorrupter.js</a>.
+                That means this website will get corrupted really soon.</p>
+
+                <h2>What will happen</h2>
+                <p>The website will start glitching, text starts randomly switching colors, and more.</p>
+
+                <div class="grid">
+                    <img src="https://picsum.photos/400/200" alt="Random Image 1" style="max-width: 100%; height: auto;">
+                    <img src="https://picsum.photos/400/200" alt="Random Image 2" style="max-width: 100%; height: auto;">
+                </div>
+
+                <h3 style="color: #FF5722;">Features of WebCorrupter.js</h3>
+                <ul style="list-style-type: square;">
+                    <li>Random text color changes</li>
+                    <li>Element shuffling</li>
+                    <li>Unexpected animations</li>
+                    <li>And many more surprises!</li>
+                </ul>
+
+                <div style="background-color: #FFF3E0; border-left: 5px solid #FF9800; padding: 10px; margin: 20px 0;">
+                    <p style="margin: 0;"><strong>Warning:</strong> This demo is for educational purposes only. The effects can be disorienting.</p>
+                </div>
+
+                <h3>Interactive Elements (that may not work for long)</h3>
+                <button style="background-color: #2196F3; color: white; border: none; padding: 10px 20px; cursor: pointer;">Click me!</button>
+                <input type="text" placeholder="Type something..." style="margin-left: 10px; padding: 5px;">
+
+                <h3 style="color: #9C27B0;">Lorem Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc id aliquam tincidunt, nisl nunc tincidunt nunc, vitae aliquam nunc nunc vitae nunc. Sed euismod, nunc id aliquam tincidunt, nisl nunc tincidunt nunc, vitae aliquam nunc nunc vitae nunc.</p>
+
+                <h3 style="color: #E91E63;">More Interactive Elements</h3>
+                <select style="padding: 5px; margin-right: 10px;">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                <input type="checkbox" id="checkbox1" style="margin-right: 5px;">
+                <label for="checkbox1">Check me</label>
+
+                <h3 style="color: #009688;">Table Example</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr style="background-color: #4CAF50; color: white;">
+                        <th style="padding: 10px; text-align: left;">Header 1</th>
+                        <th style="padding: 10px; text-align: left;">Header 2</th>
+                        <th style="padding: 10px; text-align: left;">Header 3</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Row 1, Cell 1</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Row 1, Cell 2</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Row 1, Cell 3</td>
+                    </tr>
+                    <tr style="background-color: #f2f2f2;">
+                        <td style="padding: 10px; border: 1px solid #ddd;">Row 2, Cell 1</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Row 2, Cell 2</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Row 2, Cell 3</td>
+                    </tr>
+                </table>
+
+                <h3 style="color: #3F51B5;">Contact Form</h3>
+                <form style="background-color: #f2f2f2; padding: 20px; border-radius: 5px;">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea><br>
+                    <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+                </form>
+            </main>
+
+            <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+                <p style="margin: 0;">&copy; 2023 WebCorrupter.js Demo. All rights (and wrongs) reserved.</p>
+            </footer>
+        </div>
     </body>
 </html>
