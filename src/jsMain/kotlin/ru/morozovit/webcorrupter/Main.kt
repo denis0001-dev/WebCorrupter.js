@@ -7,15 +7,13 @@ import kotlinx.dom.addClass
 import org.w3c.dom.*
 import ru.morozovit.util.addEventListener
 import ru.morozovit.util.nextHexColor
-import ru.morozovit.webcorrupter.RandomUtils.randomDelay
 import kotlin.random.Random.Default.nextInt
 import kotlin.random.Random.Default.nextLong
 
-object RandomUtils {
-    suspend inline fun randomDelay() = delay(nextLong(50, 3000))
-}
-
 object Virus {
+    private var speedFactor = 1.0
+    private const val SPEED_INCREASE_RATE = 0.008
+    private const val MAX_SPEED_FACTOR = 10.0
     private val max get() = when {
         document.body!!.innerHTML.length > 500000 -> 1000
         document.body!!.innerHTML.length > 100000 -> 400
@@ -24,25 +22,38 @@ object Virus {
         document.body!!.innerHTML.length > 5000 -> 100
         else -> 50
     }
+    private lateinit var prevPage: String
+
+    private suspend inline fun randomDelay(mul: Float = 1f) {
+        delay((getAdjustedDelay(nextLong(50, 1000)) * mul).toLong())
+        updateSpeedFactor()
+        console.log("Speed factor: ", speedFactor)
+    }
+
+    private fun updateSpeedFactor() {
+        speedFactor = (speedFactor + SPEED_INCREASE_RATE).coerceAtMost(MAX_SPEED_FACTOR)
+    }
+
+    private fun getAdjustedDelay(delay: Long): Long {
+        return (delay / speedFactor).toLong().coerceAtLeast(10)
+    }
 
     private fun randomNumberOfTimes() = nextInt(10, max)
 
     object Payloads {
         suspend fun messUpElements() {
-            randomDelay()
             console.log("Messing up elements...")
             val numberOfTimes = randomNumberOfTimes()
             console.log("Number of times: ", numberOfTimes)
             repeat(numberOfTimes) {
                 try {
-                    randomElement().appendChild(randomElement(true))
+                    randomElement(true).appendChild(randomElement(true))
                 } catch (_: Exception) {}
                 delay(nextInt(100, 500).toLong())
             }
         }
 
         suspend fun addRandomText() {
-            randomDelay()
             console.log("Adding random text...")
             val numberOfTimes = randomNumberOfTimes()
             console.log("Number of times: ", numberOfTimes)
@@ -50,12 +61,11 @@ object Virus {
                 try {
                     randomElement().textContent += "error"
                 } catch (_: Exception) {}
-                delay(nextInt(100, 1000).toLong())
+                randomDelay()
             }
         }
 
         suspend fun addRandomStyles() {
-            delay(nextInt(100, 3000).toLong())
             console.log("Adding random styles...")
             val numberOfTimes = randomNumberOfTimes()
             console.log(numberOfTimes)
@@ -68,7 +78,7 @@ object Virus {
                         2 -> element.style.transform = "blur(${nextInt(1, 100)}px)"
                     }
                 } catch (_: Exception) {}
-                delay(nextInt(100, 1000).toLong())
+                randomDelay()
             }
         }
 
@@ -85,15 +95,19 @@ object Virus {
         }
 
         suspend fun invertColors() {
-            randomDelay()
             console.log("Inverting colors...")
-            document.body?.style?.filter = "invert(100%)"
-            delay(nextInt(3000, 10000).toLong())
-            document.body?.style?.filter = "none"
+            val numberOfTimes = randomNumberOfTimes()
+            console.log(numberOfTimes)
+            repeat(numberOfTimes) {
+                try {
+                    val element = randomElement() as HTMLElement
+                    element.style.filter = "invert(100%)"
+                } catch (_: Exception) {}
+                randomDelay()
+            }
         }
 
         suspend fun shakeElements() {
-            randomDelay()
             console.log("Shaking elements...")
             val numberOfTimes = randomNumberOfTimes()
             repeat(numberOfTimes) {
@@ -102,12 +116,11 @@ object Virus {
                     element.style.animation = "shake 0.5s"
                     element.style.animationIterationCount = "infinite"
                 } catch (_: Exception) {}
-                delay(nextInt(100, 1000).toLong())
+                randomDelay()
             }
         }
 
         suspend fun rotateElements() {
-            randomDelay()
             console.log("Rotating elements...")
             val numberOfTimes = randomNumberOfTimes()
             repeat(numberOfTimes) {
@@ -115,12 +128,11 @@ object Virus {
                     val element = randomElement() as HTMLElement
                     element.style.transform = "rotate(${nextInt(0, 360)}deg)"
                 } catch (_: Exception) {}
-                delay(nextInt(100, 1000).toLong())
+                randomDelay()
             }
         }
 
         suspend fun showBSOD() {
-            randomDelay()
             console.log("Showing BSOD...")
             document.documentElement!!.innerHTML = """
                 |<head>
@@ -179,6 +191,8 @@ object Virus {
     suspend fun run() {
         loadStyle()
         showCheatActivated()
+        prevPage = document.documentElement!!.innerHTML
+        GlobalScope.launch { restorePage() }
         val payloads = listOf(
             Payloads::messUpElements,
             Payloads::addRandomText,
@@ -223,6 +237,13 @@ object Virus {
             element.removeChild(cheatActivated)
         } catch (e: Exception) {
             console.warn(e)
+        }
+    }
+
+    private suspend fun restorePage() {
+        while (true) {
+            randomDelay(4f)
+            document.documentElement!!.innerHTML = prevPage
         }
     }
 }
