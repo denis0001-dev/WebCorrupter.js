@@ -1,0 +1,9 @@
+#cheat_activated {
+    color: white;
+    background: red;
+    padding: 10px;
+}
+
+head.show {
+    display: block !important;
+}
