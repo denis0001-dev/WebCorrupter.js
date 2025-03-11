@@ -12,7 +12,7 @@ repositories {
 }
 
 kotlin {
-    js {
+    js(IR) {
         browser {
             @OptIn(ExperimentalDistributionDsl::class)
             distribution {
