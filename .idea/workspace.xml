@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="new payloads" />
+    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="new payloads">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,11 +136,11 @@
     <option name="myCommands">
       <command value="gradle jsBrowserProductionWebpack" />
       <command value="gradle :jsBrowserProductionRun" />
-      <command value="gradle jsBrowserDistribution" />
       <command value="gradle jsBrowserDevelopmentRun --continuous" />
+      <command value="gradle jsBrowserDistribution" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]">
+  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDistribution]">
     <configuration name="WebCorrupter.js [:jsBrowserProductionRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -251,8 +253,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [clean]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
@@ -280,7 +282,7 @@
       <workItem from="1741679607798" duration="43000" />
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
-      <workItem from="1741714783556" duration="3597000" />
+      <workItem from="1741714783556" duration="5231000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -546,7 +548,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741718380971</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="new payloads">
+      <option name="closed" value="true" />
+      <created>1741718593838</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1741718593838</updated>
+    </task>
+    <task id="LOCAL-00035" summary="new payloads">
+      <option name="closed" value="true" />
+      <created>1741718707422</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1741718707422</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
