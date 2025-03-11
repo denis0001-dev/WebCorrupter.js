@@ -1,7 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Full test" type="CompoundRunConfigurationType">
-    <toRun name="Browser debug" type="JavascriptDebugType" />
-    <toRun name="Test 2" type="ShConfigurationType" />
-    <method v="2" />
-  </configuration>
-</component>

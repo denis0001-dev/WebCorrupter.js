@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="switch to kotlin">
+      <change afterPath="$PROJECT_DIR$/injectToTests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/1/webcorrupter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/material-symbols-outlined/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/material-symbols-outlined/main.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRxC7mw9c.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRxi7mw9c.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUQjIg1_i6t8kCHKm459WxRzS7mw9c.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/montserrat/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-ext-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-ext-normal.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/fonts/rethink-sans/latin-normal.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/HOW_TO_LOCK_APPS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/HOW_TO_USE_UNLOCK_PROTECTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/create.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_lock_apps/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_lock_apps_raw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_use_unlock_protection/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/how_to_use_unlock_protection_raw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/style_md.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/lib/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/as_a_separate_app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/as_a_shortcut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/demo.webm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/accessibility_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/accessibility_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/applocker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/crash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/notification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_lock_apps/select_apps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_use_unlock_protection/devadmin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/guides/how_to_use_unlock_protection/unlock_protection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/res/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jsMain/resources/tests/2/webcorrupter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WebCorrupter_js_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/WebCorrupter_js_1_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebCorrupter" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebCorrupter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebCorrupter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebCorrupter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="TypeScript File" />
+        <option value="tsconfig.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2u8I0E2VfTaU5ojd0eepDQd1aGU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.WebCorrupter.js [:jsBrowserProductionRun].executor": "Run",
+    "Gradle.WebCorrupter.js [clean].executor": "Run",
+    "Gradle.WebCorrupter.js [jsBrowserProductionWebpack].executor": "Run",
+    "JavaScript Debug.Browser debug.executor": "Run",
+    "JavaScript Debug.Run.executor": "Run",
+    "JavaScript Debug.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Shell Script.Inject to tests.executor": "Run",
+    "Shell Script.Test 1.executor": "Run",
+    "Shell Script.Test 2.executor": "Run",
+    "git-widget-placeholder": "kotlin",
+    "javascript.nodejs.core.library.configured.version": "22.14.0",
+    "javascript.nodejs.core.library.typings.version": "22.13.10",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/media/denis0001-dev/data/Программы/JetBrains/Плагины/TabNine-1.206.0.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/denis0001-dev/WebstormProjects/WebCorrupter.js/tests/2/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="/tmp/qodana_output/qodana.sarif.json" reportGuid="fb5bc712-a554-4378-9062-2b00b661c674" reportId="WebCorrupter.js/qodana/2025-03-10" />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/1" />
+      <recent name="$PROJECT_DIR$/test1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/jsMain/resources" />
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle jsBrowserProductionWebpack" />
+      <command value="gradle :jsBrowserProductionRun" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]">
+    <configuration name="WebCorrupter.js [:jsBrowserProductionRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":jsBrowserProductionRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebCorrupter.js [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebCorrupter.js [jsBrowserProductionWebpack]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jsBrowserProductionWebpack" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
+        <item itemvalue="Gradle.WebCorrupter.js [clean]" />
+        <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="" />
+      <created>1741623550584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741623550584</updated>
+      <workItem from="1741623551775" duration="12969000" />
+      <workItem from="1741679191703" duration="380000" />
+      <workItem from="1741679607798" duration="43000" />
+      <workItem from="1741679662820" duration="2036000" />
+      <workItem from="1741685150085" duration="420000" />
+    </task>
+    <task id="LOCAL-00001" summary="setup">
+      <option name="closed" value="true" />
+      <created>1741623590808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741623590808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="setup">
+      <option name="closed" value="true" />
+      <created>1741624542609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741624542609</updated>
+    </task>
+    <task id="LOCAL-00003" summary="setup">
+      <option name="closed" value="true" />
+      <created>1741625544262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741625544262</updated>
+    </task>
+    <task id="LOCAL-00004" summary="setup">
+      <option name="closed" value="true" />
+      <created>1741625671420</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741625671420</updated>
+    </task>
+    <task id="LOCAL-00005" summary="payloads">
+      <option name="closed" value="true" />
+      <created>1741627409158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741627409158</updated>
+    </task>
+    <task id="LOCAL-00006" summary="payloads">
+      <option name="closed" value="true" />
+      <created>1741627445569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741627445569</updated>
+    </task>
+    <task id="LOCAL-00007" summary="payloads">
+      <option name="closed" value="true" />
+      <created>1741627464183</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741627464183</updated>
+    </task>
+    <task id="LOCAL-00008" summary="payloads">
+      <option name="closed" value="true" />
+      <created>1741627815740</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741627815740</updated>
+    </task>
+    <task id="LOCAL-00009" summary="payloads">
+      <option name="closed" value="true" />
+      <created>1741628038955</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741628038955</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test">
+      <option name="closed" value="true" />
+      <created>1741628164897</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741628164897</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test">
+      <option name="closed" value="true" />
+      <created>1741628860301</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741628860301</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <option name="closed" value="true" />
+      <created>1741628880942</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741628880942</updated>
+    </task>
+    <task id="LOCAL-00013" summary="test">
+      <option name="closed" value="true" />
+      <created>1741629666541</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741629666541</updated>
+    </task>
+    <task id="LOCAL-00014" summary="test">
+      <option name="closed" value="true" />
+      <created>1741630102290</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741630102291</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test">
+      <option name="closed" value="true" />
+      <created>1741632829855</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741632829855</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test">
+      <option name="closed" value="true" />
+      <created>1741633282360</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741633282360</updated>
+    </task>
+    <task id="LOCAL-00017" summary="test">
+      <option name="closed" value="true" />
+      <created>1741633291411</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741633291411</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test">
+      <option name="closed" value="true" />
+      <created>1741633505204</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741633505204</updated>
+    </task>
+    <task id="LOCAL-00019" summary="test">
+      <option name="closed" value="true" />
+      <created>1741633677180</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741633677180</updated>
+    </task>
+    <task id="LOCAL-00020" summary="readme">
+      <option name="closed" value="true" />
+      <created>1741634317246</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741634317246</updated>
+    </task>
+    <task id="LOCAL-00021" summary="readme">
+      <option name="closed" value="true" />
+      <created>1741634392771</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741634392771</updated>
+    </task>
+    <task id="LOCAL-00022" summary="minify">
+      <option name="closed" value="true" />
+      <created>1741636612514</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1741636612514</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fixed minifier">
+      <option name="closed" value="true" />
+      <created>1741637041492</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1741637041492</updated>
+    </task>
+    <task id="LOCAL-00024" summary="remove minifier">
+      <option name="closed" value="true" />
+      <created>1741638366845</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1741638366845</updated>
+    </task>
+    <task id="LOCAL-00025" summary="delete node modules">
+      <option name="closed" value="true" />
+      <created>1741638508516</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1741638508516</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741638589893</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1741638589893</updated>
+    </task>
+    <task id="LOCAL-00027" summary="node modules">
+      <option name="closed" value="true" />
+      <created>1741679328120</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1741679328120</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/api.js" />
+        <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/guides/main.js" />
+        <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/main.js" />
+        <option value="$PROJECT_DIR$/src/jsMain/resources/tests/2/common.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/test1" />
+    </ignored-roots>
+    <MESSAGE value="setup" />
+    <MESSAGE value="payloads" />
+    <MESSAGE value="test" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="minify" />
+    <MESSAGE value="fixed minifier" />
+    <MESSAGE value="remove minifier" />
+    <MESSAGE value="delete node modules" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="node modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="node modules" />
+  </component>
+</project>
