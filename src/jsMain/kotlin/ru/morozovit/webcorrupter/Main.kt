@@ -146,6 +146,7 @@ object Virus {
                 |</pre>
                 |</body>
             """.trimMargin()
+            loadStyle()
             throw RuntimeException("BSOD displayed")
         }
     }

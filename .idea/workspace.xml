@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="switch to kotlin">
-      <change afterPath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/util/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsMain/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/resources/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jsMain/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/resources/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="new payloads" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -287,7 +280,7 @@
       <workItem from="1741679607798" duration="43000" />
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
-      <workItem from="1741714783556" duration="3210000" />
+      <workItem from="1741714783556" duration="3597000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -545,7 +538,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741709474160</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="new payloads">
+      <option name="closed" value="true" />
+      <created>1741718380971</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1741718380971</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,6 +591,7 @@
     <MESSAGE value="node modules" />
     <MESSAGE value="fix" />
     <MESSAGE value="switch to kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="switch to kotlin" />
+    <MESSAGE value="new payloads" />
+    <option name="LAST_COMMIT_MESSAGE" value="new payloads" />
   </component>
 </project>
