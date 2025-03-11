@@ -4,12 +4,7 @@ import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.coroutines.*
 import kotlinx.dom.addClass
-import kotlinx.html.dom.append
-import kotlinx.html.js.div
-import kotlinx.html.js.style
 import org.w3c.dom.*
-import kotlin.js.Promise
-import kotlin.random.Random
 import kotlin.random.Random.Default.nextInt
 
 object RandomUtils {

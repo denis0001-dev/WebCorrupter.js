@@ -4,11 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="node modules" />
+    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="switch to kotlin">
+      <change afterPath="$PROJECT_DIR$/tests/1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/1/webcorrupter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/fonts/material-symbols-outlined/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/fonts/montserrat/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/fonts/rethink-sans/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/guides/HOW_TO_LOCK_APPS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/2/guides/HOW_TO_USE_UNLOCK_PROTECTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/static.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/static.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/injectToTests.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebCorrupter" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="WebCorrupter" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,32 +84,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Browser debug.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.Run.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.Test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Shell Script.Inject to tests.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Test 1.executor&quot;: &quot;Run&quot;,
-    &quot;Shell Script.Test 2.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.14.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.13.10&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/media/denis0001-dev/data/Программы/JetBrains/Плагины/TabNine-1.206.0.zip&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/denis0001-dev/WebstormProjects/WebCorrupter.js/tests/2/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Browser debug.executor": "Run",
+    "JavaScript Debug.Run.executor": "Run",
+    "JavaScript Debug.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Shell Script.Inject to tests.executor": "Run",
+    "Shell Script.Test 1.executor": "Run",
+    "Shell Script.Test 2.executor": "Run",
+    "git-widget-placeholder": "kotlin",
+    "javascript.nodejs.core.library.configured.version": "22.14.0",
+    "javascript.nodejs.core.library.typings.version": "22.13.10",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/media/denis0001-dev/data/Программы/JetBrains/Плагины/TabNine-1.206.0.zip",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/denis0001-dev/WebstormProjects/WebCorrupter.js/tests/2/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="/tmp/qodana_output/qodana.sarif.json" reportGuid="fb5bc712-a554-4378-9062-2b00b661c674" reportId="WebCorrupter.js/qodana/2025-03-10" />
@@ -81,7 +129,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -97,6 +146,7 @@
       <workItem from="1741679191703" duration="380000" />
       <workItem from="1741679607798" duration="43000" />
       <workItem from="1741679662820" duration="2036000" />
+      <workItem from="1741685150085" duration="420000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
