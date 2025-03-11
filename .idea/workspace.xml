@@ -143,7 +143,7 @@
       <command value="gradle jsBrowserDistribution" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]">
+  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDistribution]">
     <configuration name="WebCorrupter.js [:jsBrowserProductionRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -256,8 +256,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [clean]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
