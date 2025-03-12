@@ -29,4 +29,6 @@ html:has(#bsod) {
     margin: 0;
     font-size: medium;
     transform: none !important;
+    cursor: none;
+    user-select: none;
 }

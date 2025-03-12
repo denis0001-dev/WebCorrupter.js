@@ -25,7 +25,10 @@ html:has(#bsod) {
     color: white !important;
     background-color: blue !important;
     font-family: monospace;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    font-size: medium;
     transform: none !important;
+    cursor: none;
+    user-select: none;
 }
