@@ -255,7 +255,7 @@ object Virus {
 
     private suspend fun restorePage() {
         while (true) {
-            randomDelay(6f)
+            randomDelay(8f)
             console.log("Restoring page...")
             if (!isActive) break
             document.documentElement!!.innerHTML = prevPage
