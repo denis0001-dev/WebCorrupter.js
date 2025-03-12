@@ -23,6 +23,46 @@ object Virus {
     private lateinit var prevPage: String
     private var isActive = true
 
+    @Suppress("CssUnusedSymbol")
+    private const val STYLESHEET = """
+        #cheat_activated {
+            color: white;
+            background: red;
+            padding: 10px;
+        }
+        
+        head.show {
+            display: block !important;
+        }
+        
+        body:has(#bsod) {
+            margin: 0;
+            padding: 0;
+            transform: none !important;
+            height: 100vh;
+        }
+        
+        html:has(#bsod) {
+            color: white !important;
+            background-color: blue !important;
+        }
+        
+        #bsod {
+            display: block;
+            color: white !important;
+            background-color: blue !important;
+            font-family: monospace;
+            padding: 10px;
+            margin: 0;
+            font-size: medium;
+            transform: none !important;
+            cursor: none;
+            user-select: none;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+    """
+
     fun stop() {
         isActive = false // Set the flag to false to stop the virus
     }
@@ -139,7 +179,7 @@ object Virus {
             }
         }
 
-        suspend fun showBSOD() {
+        fun showBSOD() {
             console.log("Showing BSOD...")
             val browserName = getBrowserName()
             val randomHexNumbers = List(5) { generateHexString(8) }
@@ -235,10 +275,9 @@ object Virus {
         Payloads.showBSOD()
     }
 
-    private suspend fun loadStyle() {
-        val style = window.fetch("https://raw.githubusercontent.com/denis0001-dev/WebCorrupter.js/main/dist/style.css").await()
+    private fun loadStyle() {
         val stylesheet = document.createElement("style") as HTMLStyleElement
-        stylesheet.textContent = style.text().await()
+        stylesheet.textContent = STYLESHEET
         document.head?.appendChild(stylesheet)
     }
 
