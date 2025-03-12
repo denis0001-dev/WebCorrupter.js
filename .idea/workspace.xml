@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/src/jsMain/resources/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/resources/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
       <command value="gradle jsBrowserDistribution" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDistribution]">
+  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]">
     <configuration name="WebCorrupter.js [:jsBrowserProductionRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -253,10 +253,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
-        <item itemvalue="Gradle.WebCorrupter.js [clean]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
+        <item itemvalue="Gradle.WebCorrupter.js [clean]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
       </list>
     </recent_temporary>
@@ -283,7 +283,7 @@
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
       <workItem from="1741714783556" duration="6957000" />
-      <workItem from="1741769018719" duration="3655000" />
+      <workItem from="1741769018719" duration="3963000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -597,7 +597,39 @@
       <option name="project" value="LOCAL" />
       <updated>1741772413839</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741772733229</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1741772733229</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741772843229</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1741772843229</updated>
+    </task>
+    <task id="LOCAL-00042" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741772895770</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1741772895770</updated>
+    </task>
+    <task id="LOCAL-00043" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741772915815</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1741772915815</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

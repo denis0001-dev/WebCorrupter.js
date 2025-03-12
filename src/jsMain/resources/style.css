@@ -31,4 +31,6 @@ html:has(#bsod) {
     transform: none !important;
     cursor: none;
     user-select: none;
+    height: 100vh;
+    box-sizing: border-box;
 }
