@@ -253,10 +253,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [clean]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
       </list>
     </recent_temporary>
