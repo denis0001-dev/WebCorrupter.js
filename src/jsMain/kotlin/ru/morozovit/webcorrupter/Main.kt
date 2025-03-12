@@ -18,7 +18,7 @@ object Virus {
     private const val MAX_SPEED_FACTOR = 10.0
     private val max: Int get() {
         val elementCount = document.documentElement!!.querySelectorAll("*").length
-        return (elementCount / 20).coerceAtLeast(10)
+        return (elementCount / 5).coerceAtLeast(10)
     }
     private lateinit var prevPage: String
     private var isActive = true
