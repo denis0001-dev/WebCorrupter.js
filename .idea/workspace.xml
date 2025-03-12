@@ -7,6 +7,9 @@
     <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="move stylesheet to script">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/WebCorrupter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/WebCorrupter.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/build.gradle.kts" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -254,9 +260,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [clean]" />
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
       </list>
@@ -284,7 +290,7 @@
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
       <workItem from="1741714783556" duration="6957000" />
-      <workItem from="1741769018719" duration="4696000" />
+      <workItem from="1741769018719" duration="4911000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -662,7 +668,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741773590934</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="move stylesheet to script">
+      <option name="closed" value="true" />
+      <created>1741773870726</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1741773870726</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
