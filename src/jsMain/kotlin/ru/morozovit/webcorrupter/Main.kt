@@ -27,10 +27,14 @@ object Virus {
         isActive = false // Set the flag to false to stop the virus
     }
 
-    private suspend inline fun randomDelay(mul: Float = 1f) {
-        delay((getAdjustedDelay(nextLong(50, 1000)) * mul).toLong())
-        updateSpeedFactor()
-        console.log("Speed factor: ", speedFactor)
+    private suspend inline fun randomDelay(mul: Float = 1f, applySpeedFactor: Boolean = true) {
+        if (applySpeedFactor) {
+            delay((getAdjustedDelay(nextLong(50, 1000)) * mul).toLong())
+            updateSpeedFactor()
+            console.log("Speed factor: ", speedFactor)
+        } else {
+            delay((nextLong(50, 1000) * mul).toLong())
+        }
     }
 
     private fun updateSpeedFactor() {
