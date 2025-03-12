@@ -6,6 +6,8 @@ import kotlinx.coroutines.*
 import kotlinx.dom.addClass
 import org.w3c.dom.*
 import ru.morozovit.util.addEventListener
+import ru.morozovit.util.generateHexString
+import ru.morozovit.util.getBrowserName
 import ru.morozovit.util.nextHexColor
 import kotlin.random.Random.Default.nextInt
 import kotlin.random.Random.Default.nextLong
@@ -14,15 +16,16 @@ object Virus {
     private var speedFactor = 1.0
     private const val SPEED_INCREASE_RATE = 0.008
     private const val MAX_SPEED_FACTOR = 10.0
-    private val max get() = when {
-        document.body!!.innerHTML.length > 500000 -> 1000
-        document.body!!.innerHTML.length > 100000 -> 400
-        document.body!!.innerHTML.length > 50000 -> 300
-        document.body!!.innerHTML.length > 10000 -> 200
-        document.body!!.innerHTML.length > 5000 -> 100
-        else -> 50
+    private val max: Int get() {
+        val elementCount = document.documentElement!!.querySelectorAll("*").length
+        return (elementCount / 20).coerceAtLeast(10)
     }
     private lateinit var prevPage: String
+    private var isActive = true
+
+    fun stop() {
+        isActive = false // Set the flag to false to stop the virus
+    }
 
     private suspend inline fun randomDelay(mul: Float = 1f) {
         delay((getAdjustedDelay(nextLong(50, 1000)) * mul).toLong())
@@ -134,12 +137,14 @@ object Virus {
 
         suspend fun showBSOD() {
             console.log("Showing BSOD...")
+            val browserName = getBrowserName()
+            val randomHexNumbers = List(5) { generateHexString(8) }
             document.documentElement!!.innerHTML = """
                 |<head>
                 |</head>
                 |<body>
                 |<pre id="bsod">
-                |A problem has been detected and <!-- TODO random chars --> has been shut down to prevent damage 
+                |A problem has been detected and $browserName has been shut down to prevent damage 
                 |to your computer.
                 |    
                 |BUGCODE_USB_DRIVE
@@ -154,12 +159,16 @@ object Virus {
                 |
                 |Technical Information:
                 |
-                |*** STOP: <!-- rnd hex number --> (<!-- rnd hex number -->, <!-- rnd hex number -->, <!-- rnd hex number -->, <!-- rnd hex number -->)
+                |*** STOP: ${randomHexNumbers[0]} (${randomHexNumbers[1]}, ${randomHexNumbers[2]}, ${randomHexNumbers[3]}, ${randomHexNumbers[4]})
                 |</pre>
                 |</body>
-            """.trimMargin()
+                """.trimMargin()
+            runCatching {
+                document.documentElement!!.requestFullscreen()
+            }
             loadStyle()
-            throw RuntimeException("BSOD displayed")
+            stop()
+            throw RuntimeException("Showed BSOD")
         }
     }
 
@@ -204,7 +213,11 @@ object Virus {
         ).shuffled()
 
         for (payload in payloads) {
-            payload()
+            if (isActive) { // Check the flag before executing each payload
+                payload()
+            } else {
+                break // Stop executing payloads if the virus is not active
+            }
         }
 
         if (nextInt(0, 1) == 1) {
@@ -242,7 +255,9 @@ object Virus {
 
     private suspend fun restorePage() {
         while (true) {
-            randomDelay(4f)
+            randomDelay(6f)
+            console.log("Restoring page...")
+            if (!isActive) break
             document.documentElement!!.innerHTML = prevPage
         }
     }
