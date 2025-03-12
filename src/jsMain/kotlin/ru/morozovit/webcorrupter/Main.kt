@@ -179,7 +179,7 @@ object Virus {
             }
         }
 
-        fun showBSOD() {
+        suspend fun showBSOD() {
             console.log("Showing BSOD...")
             val browserName = getBrowserName()
             val randomHexNumbers = List(5) { generateHexString(8) }
@@ -212,6 +212,8 @@ object Virus {
             }
             loadStyle()
             stop()
+            randomDelay(applySpeedFactor = false)
+            window.location.reload()
             throw RuntimeException("Showed BSOD")
         }
     }
@@ -242,37 +244,42 @@ object Virus {
 
     @OptIn(DelicateCoroutinesApi::class)
     suspend fun run() {
-        loadStyle()
-        showCheatActivated()
-        prevPage = document.documentElement!!.innerHTML
-        GlobalScope.launch { restorePage() }
-        val payloads = listOf(
-            Payloads::messUpElements,
-            Payloads::addRandomText,
-            Payloads::addRandomStyles,
-            Payloads::invertColors,
-            Payloads::shakeElements,
-            Payloads::rotateElements,
-            Payloads::showHead
-        ).shuffled()
+        try {
+            loadStyle()
+            showCheatActivated()
+            prevPage = document.documentElement!!.innerHTML
+            GlobalScope.launch { restorePage() }
+            val payloads = listOf(
+                Payloads::messUpElements,
+                Payloads::addRandomText,
+                Payloads::addRandomStyles,
+                Payloads::invertColors,
+                Payloads::shakeElements,
+                Payloads::rotateElements,
+                Payloads::showHead
+            ).shuffled()
 
-        for (payload in payloads) {
-            if (isActive) { // Check the flag before executing each payload
-                payload()
-            } else {
-                break // Stop executing payloads if the virus is not active
+            for (payload in payloads) {
+                if (isActive) { // Check the flag before executing each payload
+                    payload()
+                } else {
+                    break // Stop executing payloads if the virus is not active
+                }
             }
-        }
 
-        if (nextInt(0, 1) == 1) {
-            Payloads.showHead()
-        }
-        if (nextInt(0, 1) == 1) {
-            GlobalScope.launch { Payloads.randomScroll() }
-        }
+            if (nextInt(0, 1) == 1) {
+                Payloads.showHead()
+            }
+            if (nextInt(0, 1) == 1) {
+                GlobalScope.launch { Payloads.randomScroll() }
+            }
 
-        // Show BSOD at the end
-        Payloads.showBSOD()
+            // Show BSOD at the end
+            Payloads.showBSOD()
+        } catch (e: Exception) {
+            console.error(e)
+            Payloads.showBSOD()
+        }
     }
 
     private fun loadStyle() {
