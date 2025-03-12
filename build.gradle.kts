@@ -30,3 +30,9 @@ kotlin {
         }
     }
 }
+
+tasks.register("cleanDist") {
+    delete(projectDir.resolve("dist"))
+}
+
+tasks["clean"].finalizedBy(tasks["cleanDist"])

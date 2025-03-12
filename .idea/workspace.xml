@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="fix" />
+    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="move stylesheet to script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,9 +254,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [clean]" />
+        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
         <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
       </list>
@@ -281,7 +284,7 @@
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
       <workItem from="1741714783556" duration="6957000" />
-      <workItem from="1741769018719" duration="4277000" />
+      <workItem from="1741769018719" duration="4696000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -651,7 +654,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741773289700</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="move stylesheet to script">
+      <option name="closed" value="true" />
+      <created>1741773590934</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1741773590934</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,6 +708,7 @@
     <MESSAGE value="switch to kotlin" />
     <MESSAGE value="new payloads" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="move stylesheet to script" />
+    <option name="LAST_COMMIT_MESSAGE" value="move stylesheet to script" />
   </component>
 </project>
