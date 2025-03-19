@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="fix" />
+    <list default="true" id="62b9c9bf-d7fe-400e-a2b3-393898c5e509" name="Changes" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsMain/kotlin/ru/morozovit/webcorrupter/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,7 +144,7 @@
       <command value="gradle jsBrowserDistribution" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDistribution]">
+  <component name="RunManager" selected="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]">
     <configuration name="WebCorrupter.js [:jsBrowserProductionRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -254,11 +257,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDistribution]" />
         <item itemvalue="Gradle.WebCorrupter.js [jsBrowserDevelopmentRun]" />
-        <item itemvalue="Gradle.WebCorrupter.js [clean]" />
-        <item itemvalue="Gradle.WebCorrupter.js [jsBrowserProductionWebpack]" />
-        <item itemvalue="Gradle.WebCorrupter.js [:jsBrowserProductionRun]" />
       </list>
     </recent_temporary>
   </component>
@@ -284,23 +283,10 @@
       <workItem from="1741679662820" duration="2036000" />
       <workItem from="1741685150085" duration="420000" />
       <workItem from="1741714783556" duration="6957000" />
-      <workItem from="1741769018719" duration="6000000" />
-    </task>
-    <task id="LOCAL-00005" summary="payloads">
-      <option name="closed" value="true" />
-      <created>1741627409158</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1741627409158</updated>
-    </task>
-    <task id="LOCAL-00006" summary="payloads">
-      <option name="closed" value="true" />
-      <created>1741627445569</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1741627445569</updated>
+      <workItem from="1741769018719" duration="9522000" />
+      <workItem from="1741856034187" duration="6134000" />
+      <workItem from="1742399022982" duration="185000" />
+      <workItem from="1742399230978" duration="1703000" />
     </task>
     <task id="LOCAL-00007" summary="payloads">
       <option name="closed" value="true" />
@@ -678,7 +664,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741774427747</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741775352198</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1741775352198</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fix">
+      <option name="closed" value="true" />
+      <created>1741775692829</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1741775692829</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -45,6 +45,7 @@ object Virus {
         html:has(#bsod) {
             color: white !important;
             background-color: blue !important;
+            transform: none !important;
         }
         
         #bsod {
@@ -60,6 +61,18 @@ object Virus {
             user-select: none;
             height: 100vh;
             box-sizing: border-box;
+        }
+        
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translate(-5px);
+            }
+            100% {
+                transform: translateX(0);
+            }
         }
     """
 
@@ -160,7 +173,7 @@ object Virus {
             repeat(numberOfTimes) {
                 try {
                     val element = randomElement() as HTMLElement
-                    element.style.animation = "shake 0.5s"
+                    element.style.animation = "shake 0.1s"
                     element.style.animationIterationCount = "infinite"
                 } catch (_: Exception) {}
                 randomDelay()
@@ -179,10 +192,45 @@ object Virus {
             }
         }
 
+        @Suppress("RedundantSuspendModifier")
         suspend fun showBSOD() {
             console.log("Showing BSOD...")
             val browserName = getBrowserName()
             val randomHexNumbers = List(5) { generateHexString(8) }
+            val errorCodes = listOf(
+                "BUGCODE_USB_DRIVE", "MEMORY_MANAGEMENT", "INACCESSIBLE_BOOT_DEVICE",
+                "HARDWARE_FAILURE", "SOFTWARE_CRASH", "NETWORK_DISCONNECT",
+                "FILE_SYSTEM_ERROR", "DRIVER_INSTALLATION_FAILURE", "POWER_SUPPLY_FAILURE",
+                "DISPLAY_DRIVER_FAILURE", "AUDIO_DRIVER_FAILURE", "INPUT_DEVICE_FAILURE",
+                "OUTPUT_DEVICE_FAILURE", "PROCESSOR_FAILURE", "MEMORY_CORRUPTION",
+                "HARD_DISK_FAILURE", "OPERATING_SYSTEM_ERROR", "SYSTEM_CONFIGURATION_ERROR"
+            )
+            val fixSteps = listOf(
+                "Unplug the USB drive and plug it back in. Make sure the cable is securely connected and the drive is properly seated.",
+                "Check the RAM for any errors. Run a memory test to identify and fix any issues.",
+                "Try restarting the boot device. If the problem persists, try resetting the CMOS battery.",
+                "Replace the hard drive with a new one. Make sure the new drive is compatible with your computer's hardware.",
+                "Update the software drivers. Download and install the latest drivers for your operating system and hardware.",
+                "Check the network connection. Make sure your computer is connected to the internet and that your router is functioning properly.",
+                "Format the file system. This will erase all data on the hard drive and create a new, clean file system.",
+                "Reinstall the necessary drivers. Make sure you have the correct drivers for your hardware and reinstall them.",
+                "Replace the power supply. If the problem persists, try replacing the power supply with a new one.",
+                "Update the display driver. Download and install the latest display driver for your graphics card.",
+                "Check the audio driver. Make sure you have the correct audio driver for your sound card and update it if necessary.",
+                "Check the input devices. Make sure your keyboard, mouse, and other input devices are properly connected and functioning.",
+                "Check the output devices. Make sure your monitor, speakers, and other output devices are properly connected and functioning.",
+                "Check the processor. Make sure your processor is functioning properly and that any overheating issues have been resolved.",
+                "Run a memory test. This will help identify and fix any memory corruption issues.",
+                "Check the hard disk for errors. Run a disk check and repair any issues that are found.",
+                "Update the operating system. Download and install the latest version of your operating system.",
+                "Check the system configuration. Make sure your computer is properly configured and that any settings or software are functioning correctly."
+            ).shuffled().take(nextInt(1, 5))
+            val solutions = listOf(
+                "throw it out of the window",
+                "leave it alone",
+                "turn off your computer",
+                "format your hard drive"
+            )
             document.documentElement!!.innerHTML = """
                 |<head>
                 |</head>
@@ -191,15 +239,14 @@ object Virus {
                 |A problem has been detected and $browserName has been shut down to prevent damage 
                 |to your computer.
                 |    
-                |BUGCODE_USB_DRIVE
+                |${errorCodes.random()}
                 |    
                 |If this is the first time you've seen this Stop error screen, 
                 |restart your computer. If this screen appears again, follow these steps:
                 |
-                |Throw your computer out of the window, go outside, touch grass, and the problem
-                |will fix itself.
+                |${fixSteps.joinToString("\n")}
                 |
-                |If problems continue, you have nothing to do. Just throw it out of the window.
+                |If problems continue, ${solutions.random()}.
                 |
                 |Technical Information:
                 |
@@ -207,13 +254,15 @@ object Virus {
                 |</pre>
                 |</body>
                 """.trimMargin()
+            document.documentElement!!.addEventListener("contextmenu") {
+                it.preventDefault()
+            }
             runCatching {
                 document.documentElement!!.requestFullscreen()
             }
             loadStyle()
             stop()
-            randomDelay(applySpeedFactor = false)
-            window.location.reload()
+            window.scrollTo(0.0, window.innerHeight.toDouble())
             throw RuntimeException("Showed BSOD")
         }
     }
@@ -305,7 +354,7 @@ object Virus {
 
     private suspend fun restorePage() {
         while (true) {
-            randomDelay(20f, false)
+            randomDelay(40f, false)
             console.log("Restoring page...")
             if (!isActive) break
             document.documentElement!!.innerHTML = prevPage
