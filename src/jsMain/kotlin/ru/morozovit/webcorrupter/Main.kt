@@ -207,29 +207,32 @@ object Virus {
             )
             val fixSteps = listOf(
                 "Unplug the USB drive and plug it back in. Make sure the cable is securely connected and the drive is properly seated.",
-                "Check the RAM for any errors. Run a memory test to identify and fix any issues.",
-                "Try restarting the boot device. If the problem persists, try resetting the CMOS battery.",
-                "Replace the hard drive with a new one. Make sure the new drive is compatible with your computer's hardware.",
-                "Update the software drivers. Download and install the latest drivers for your operating system and hardware.",
+                "Check the RAM for any errors. Run a memory corrupter to identify and fix any issues.",
+                "Try restarting the boot device. If the problem persists, try removing the CMOS battery.",
+                "Replace the hard drive with a new one. Make sure the new drive is incompatible with your computer's hardware.",
+                "Update the software drivers. Download and install the oldest drivers for your operating system and hardware.",
                 "Check the network connection. Make sure your computer is connected to the internet and that your router is functioning properly.",
-                "Format the file system. This will erase all data on the hard drive and create a new, clean file system.",
-                "Reinstall the necessary drivers. Make sure you have the correct drivers for your hardware and reinstall them.",
-                "Replace the power supply. If the problem persists, try replacing the power supply with a new one.",
-                "Update the display driver. Download and install the latest display driver for your graphics card.",
-                "Check the audio driver. Make sure you have the correct audio driver for your sound card and update it if necessary.",
-                "Check the input devices. Make sure your keyboard, mouse, and other input devices are properly connected and functioning.",
-                "Check the output devices. Make sure your monitor, speakers, and other output devices are properly connected and functioning.",
-                "Check the processor. Make sure your processor is functioning properly and that any overheating issues have been resolved.",
+                "Format the file system. This will not erase all data on the hard drive and create a new, clean file system.",
+                "Reinstall the necessary drivers. Make sure you have the incorrect drivers for your hardware and reinstall them.",
+                "Replace the power supply. If the problem persists, try replacing the power supply with an old one.",
+                "Update the display driver. Download and install the worst display driver for your graphics card.",
+                "Check the audio driver. Make sure you have the incorrect audio driver for your sound card and downgrade it if necessary.",
+                "Check the input devices. Make sure your keyboard, mouse, and other input devices are improperly connected and functioning.",
+                "Check the output devices. Make sure your monitor, speakers, and other input devices are improperly connected and functioning.",
+                "Check the processor. Make sure your processor is not functioning properly and that all overheating issues persist.",
                 "Run a memory test. This will help identify and fix any memory corruption issues.",
-                "Check the hard disk for errors. Run a disk check and repair any issues that are found.",
-                "Update the operating system. Download and install the latest version of your operating system.",
-                "Check the system configuration. Make sure your computer is properly configured and that any settings or software are functioning correctly."
+                "Check the hard disk for important files. Run a disk check and remove any important files.",
+                "Update the operating system. Download and install the oldest version of your operating system. If the issue persists, install Linux.",
+                "Check the system configuration. Make sure your computer is improperly configured and that any settings or software are functioning incorrectly."
             ).shuffled().take(nextInt(1, 5))
             val solutions = listOf(
                 "throw it out of the window",
                 "leave it alone",
                 "turn off your computer",
-                "format your hard drive"
+                "format your hard drive",
+                "don't do anything",
+                "trash your computer",
+                "go outside and touch grass"
             )
             document.documentElement!!.innerHTML = """
                 |<head>
